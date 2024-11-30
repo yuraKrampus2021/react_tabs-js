@@ -23,10 +23,9 @@ export const App = () => {
         <div className="tabs is-boxed">
           <Tabs
             activeTabId={activeTab.id}
-            onTabSelected={(id) => {
-              setActiveTabId(id)
-            }
-            }
+            onTabSelected={id => {
+              setActiveTabId(id);
+            }}
             tabs={tabs}
           />
         </div>
